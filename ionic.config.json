@@ -1,0 +1,7 @@
+{
+  "name": "emailtobuilderApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
