@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import {EmailComposer} from "@ionic-native/email-composer/ngx";
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {Geolocation} from '@ionic-native/geolocation/ngx';
+
 
 
 @NgModule({
@@ -12,7 +16,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    FlexLayoutModule ,
+  ],
+  providers: [
+    EmailComposer,
+    Geolocation
   ],
   declarations: [HomePage]
 })
